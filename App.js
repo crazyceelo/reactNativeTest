@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from "react-native";
 import Hello from "./components/Hello";
 import Component2 from "./components/component2/Component2";
 import Component3 from "./components/component3/Component3";
+import Component4 from "./components/component4/Component4";
 
 export default class App extends React.Component {
   render() {
@@ -12,7 +13,8 @@ export default class App extends React.Component {
       <View>
         {/* <Hello /> */}
         {/* <Component2 /> */}
-        <Component3 />
+        {/* <Component3 /> */}
+        <Component4 />
       </View>
     );
   }
