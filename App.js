@@ -4,13 +4,15 @@ import { StyleSheet, Text, View } from "react-native";
 // components
 import Hello from "./components/Hello";
 import Component2 from "./components/component2/Component2";
+import Component3 from "./components/component3/Component3";
 
 export default class App extends React.Component {
   render() {
     return (
       <View>
         {/* <Hello /> */}
-        <Component2 />
+        {/* <Component2 /> */}
+        <Component3 />
       </View>
     );
   }
