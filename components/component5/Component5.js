@@ -26,7 +26,7 @@ class Component5 extends Component {
       });
   }
 
-  renderRow(user, sectionId, rowId, highlightRow) {
+  renderRow(user) {
     return (
       <View style={styles.row}>
         <Text style={styles.rowText}>{user.name}</Text>
