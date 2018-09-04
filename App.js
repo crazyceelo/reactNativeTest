@@ -15,8 +15,8 @@ export default class App extends React.Component {
         {/* <Hello /> */}
         {/* <Component2 /> */}
         {/* <Component3 /> */}
-        {/* <Component4 /> */}
-        <Component5 />
+        <Component4 />
+        {/* <Component5 /> */}
       </View>
     );
   }
