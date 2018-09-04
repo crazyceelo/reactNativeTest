@@ -1,14 +1,23 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 
 class Hello extends Component {
   render() {
+    console.log("test");
     return (
       <View>
-        <Text>Hello from Hello.js</Text>
+        <Text style={styles.hello}>Hello from Hello.js</Text>
       </View>
     );
   }
 }
 
 export default Hello;
+
+const styles = StyleSheet.create({
+  hello: {
+    color: "#00FF00",
+    fontSize: 40,
+    backgroundColor: "blue"
+  }
+});
