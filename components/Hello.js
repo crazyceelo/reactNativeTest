@@ -2,11 +2,26 @@ import React, { Component } from "react";
 import { Text, View, StyleSheet } from "react-native";
 
 class Hello extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Brad",
+      showName: true,
+      message: this.props.message
+    };
+  }
+
+  static defaultProps = {
+    message: "default prop example"
+  };
+
   render() {
-    console.log("test");
+    let name = this.state.showName ? this.state.name : "no name";
+
     return (
       <View>
-        <Text style={styles.hello}>Hello from Hello.js</Text>
+        <Text style={styles.hello}>{this.state.message}</Text>
+        <Text>{name}</Text>
       </View>
     );
   }
